@@ -21,10 +21,11 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.Indexview.as_view(),name='index'),
     url(r'^home$',views.Homeview.as_view(),name='home'),
+    url(r'^history$',views.Historyview.as_view(),name='history'),
     url(r'^products$',views.Produtview.as_view(),name='products'),
     url(r'^enquiry$',views.Enquiryview.as_view(),name='enquiry'),
     url(r'^contact_us$',views.Contactview.as_view(),name='contact'),
 
 
-    
+
 ]

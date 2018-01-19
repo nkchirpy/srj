@@ -10,6 +10,9 @@ class Indexview(TemplateView):
 class Homeview(TemplateView):
     template_name = 'srjdjango/home.html'
 
+class Historyview(TemplateView):
+    template_name = 'srjdjango/history.html'
+
 class Produtview(TemplateView):
     template_name = 'srjdjango/products.html'
 
