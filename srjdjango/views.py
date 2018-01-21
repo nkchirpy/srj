@@ -1,20 +1,39 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView,CreateView
-
+from srjdjango.models import Wellsaid
 
 # Create your views here.
 
-class Indexview(TemplateView):
-    template_name = 'srjdjango/index.html'
+def wellsaidview(request):
+    user_said = Wellsaid.objects.all()
+    return render(request, 'srjdjango/wellsaid.html', { 'user_said': user_said })
 
 class Homeview(TemplateView):
     template_name = 'srjdjango/home.html'
 
-class Historyview(TemplateView):
-    template_name = 'srjdjango/history.html'
+class Aboutusview(TemplateView):
+    template_name = 'srjdjango/about_us.html'
 
-class Produtview(TemplateView):
-    template_name = 'srjdjango/products.html'
+class Historyofjewelview(TemplateView):
+    template_name = 'srjdjango/hoj.html'
+
+class Useofjewelview(TemplateView):
+    template_name = 'srjdjango/uoj.html'
+
+class Historyofgoldview(TemplateView):
+    template_name = 'srjdjango/hog.html'
+
+class Goldview(TemplateView):
+    template_name = 'srjdjango/gold.html'
+
+class Silverview(TemplateView):
+    template_name = 'srjdjango/silver.html'
+
+class Navaratnaview(TemplateView):
+    template_name = 'srjdjango/navaratna.html'
+
+class Jewelcareview(TemplateView):
+    template_name = 'srjdjango/jewelcare.html'
 
 class Enquiryview(TemplateView):
     template_name = 'srjdjango/enquiry.html'

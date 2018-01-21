@@ -15,17 +15,26 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 from srjdjango import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',views.Indexview.as_view(),name='index'),
-    url(r'^home$',views.Homeview.as_view(),name='home'),
-    url(r'^history$',views.Historyview.as_view(),name='history'),
-    url(r'^products$',views.Produtview.as_view(),name='products'),
+    url(r'^$',views.Homeview.as_view(),name='home'),
+    url(r'^about us$',views.Aboutusview.as_view(),name='about_us'),
+    url(r'^history of jewel$',views.Historyofjewelview.as_view(),name='hoj'),
+    url(r'^use of jewel$',views.Useofjewelview.as_view(),name='uoj'),
+    url(r'^history of gold$',views.Useofjewelview.as_view(),name='hog'),
+    url(r'^products/gold$',views.Goldview.as_view(),name='gold'),
+    url(r'^products/silver$',views.Goldview.as_view(),name='silver'),
+    url(r'^products/navaratna$',views.Goldview.as_view(),name='navaratna'),
+    url(r'^jewel care$',views.Jewelcareview.as_view(),name='jewelcare'),
     url(r'^enquiry$',views.Enquiryview.as_view(),name='enquiry'),
+    url(r'^wellsaid$',views.wellsaidview,name='wellsaid'),
     url(r'^contact_us$',views.Contactview.as_view(),name='contact'),
-
-
-
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -18,7 +18,7 @@
 	color: #737373;
   font-size: 0.9rem;
 	padding: 4rem;
-	background: #0F0F0F;
+	background: linear-gradient(-90deg, #BFBFBF, #FF82AB);
 }
 
 #footer-main a {
@@ -89,7 +89,7 @@
 }
 
 .get_black {
-  color: black;
+  color: white;
 }
 
 .delay {

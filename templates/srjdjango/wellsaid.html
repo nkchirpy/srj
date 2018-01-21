@@ -1,0 +1,25 @@
+{% extends "srjdjango/base.html" %} {% load staticfiles %} {% block title %}Well said{% endblock %} {% block body_block %}
+
+<div class="container">
+  <div class="table-responsive">
+  <table class="table">
+        <tr>
+          {% for obj in user_said %}
+            <td>
+              <div class="card" style="width: 15rem;">
+                <img class="img-thumbnail" src="{{ obj.fetch_image.url }}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ obj.name }}</h5>
+                    <p class="card-text">{{ obj.description }}</p>
+                  </div>
+              </div>
+            </td>
+            {% endfor %}
+        </tr>
+      </table>
+</div>
+</div>
+
+
+
+ {% endblock %}
