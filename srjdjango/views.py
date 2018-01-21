@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView,CreateView
-from srjdjango.models import Wellsaid
+from srjdjango.models import Wellsaid,Enquirymodel
+from srjdjango.forms import Enquiryform
 
 # Create your views here.
 
@@ -35,8 +36,15 @@ class Navaratnaview(TemplateView):
 class Jewelcareview(TemplateView):
     template_name = 'srjdjango/jewelcare.html'
 
-class Enquiryview(TemplateView):
+# class Enquiryview(TemplateView):
+#     template_name = 'srjdjango/enquiry.html'
+
+class Enquiryview(CreateView):
+
+    model = Enquirymodel
+    form_class = Enquiryform
     template_name = 'srjdjango/enquiry.html'
+
 
 class Contactview(TemplateView):
     template_name = 'srjdjango/contactus.html'

@@ -4,6 +4,20 @@
 
 {% block body_block %}
 
+    <section id="contact_form">
 
+        <div class="container">
+            <div class="jumbotron contact_jumbotron os-animation" style="margin-top: 7rem;">
+
+                <h2 class="contact-text">Enquiry Form</h2>
+                    <form method="POST" id="contact-form">
+                      {% csrf_token %}
+                      {{ form.as_p }}
+                      <input type="Submit" value="Submit" class="btn btn-primary" id="sub_button">
+                   </form>
+            </div>
+        </div>
+
+    </section>
 
 {% endblock %}
