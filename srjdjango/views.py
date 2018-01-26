@@ -24,6 +24,12 @@ class Useofjewelview(TemplateView):
 class Historyofgoldview(TemplateView):
     template_name = 'srjdjango/hog.html'
 
+class Historyofsilverview(TemplateView):
+    template_name = 'srjdjango/hos.html'
+
+class Historyofnavaratnaview(TemplateView):
+    template_name = 'srjdjango/hon.html'
+
 class Goldview(TemplateView):
     template_name = 'srjdjango/gold.html'
 
