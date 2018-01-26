@@ -32,7 +32,6 @@ urlpatterns = [
     url(r'^jewel_care$',views.Jewelcareview.as_view(),name='jewelcare'),
     url(r'^enquiry$',views.Enquiryview.as_view(),name='enquiry'),
     url(r'^wellsaid$',views.wellsaidview,name='wellsaid'),
-    url(r'^contact_us$',views.Contactview.as_view(),name='contact'),
 ]
 
 

@@ -103,9 +103,9 @@
 
 
 .jumbotron-hoj .img {
-    background-color: rgba(0,0,0, 1) !important;
+    background-color: rgba(0,0,0,1) !important;
     margin-bottom: 0px;
-    opacity: 0.3;
+    opacity: 0.5;
     color: #fff;
     background: white url("bg_images/hoj.jpg") top center no-repeat;
     width: 100%;
