@@ -1,6 +1,7 @@
 
 .weather {
-    position: relative; overflow: hidden;
+    /*position: relative; */
+    overflow: hidden;
 }
 /* pseudo elements: positioning and setup */
 .weather:before, .weather:after {
