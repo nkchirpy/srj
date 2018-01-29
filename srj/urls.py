@@ -21,7 +21,8 @@ from srjdjango import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',views.Homeview.as_view(),name='home'),
+    url(r'^$',views.Landview.as_view(),name='land'),
+    url(r'^home$',views.Homeview.as_view(),name='home'),
     url(r'^about_us$',views.Aboutusview.as_view(),name='about_us'),
     url(r'^history_of_jewel$',views.Historyofjewelview.as_view(),name='hoj'),
     url(r'^use_of_jewel$',views.Useofjewelview.as_view(),name='uoj'),
@@ -29,8 +30,8 @@ urlpatterns = [
     url(r'^history_of_silver$',views.Historyofsilverview.as_view(),name='hos'),
     url(r'^history_of_navaratna$',views.Historyofnavaratnaview.as_view(),name='hon'),
     url(r'^products/gold$',views.Goldview.as_view(),name='gold'),
-    url(r'^products/silver$',views.Goldview.as_view(),name='silver'),
-    url(r'^products/navaratna$',views.Goldview.as_view(),name='navaratna'),
+    url(r'^products/silver$',views.Silverview.as_view(),name='silver'),
+    url(r'^products/navaratna$',views.Navaratnaview.as_view(),name='navaratna'),
     url(r'^jewel_care$',views.Jewelcareview.as_view(),name='jewelcare'),
     url(r'^enquiry$',views.Enquiryview.as_view(),name='enquiry'),
     url(r'^wellsaid$',views.wellsaidview,name='wellsaid'),

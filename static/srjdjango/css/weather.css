@@ -1,6 +1,6 @@
-
 .weather {
-    position: relative; overflow: hidden;
+    /*position: relative; */
+    overflow: hidden;
 }
 /* pseudo elements: positioning and setup */
 .weather:before, .weather:after {
@@ -8,7 +8,7 @@
     position: absolute; left: -50%; top: -50%; right: -50%; bottom: -50%;
     z-index: 1;
     pointer-events: none;
-    
+
     background: transparent repeat;
     background-size: 256px 1024px;
     -ms-interpolation-mode: nearest-neighbor;
@@ -18,13 +18,13 @@
     image-rendering: -o-crisp-edges;
     image-rendering: pixelated;
     opacity: 0.7;
-    
+
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -ms-transform: rotate(10deg);
     -o-transform: rotate(10deg);
     transform: rotate(10deg);
-    
+
     -webkit-animation-name: weather;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;

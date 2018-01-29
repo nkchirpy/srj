@@ -8,6 +8,8 @@ from srjdjango.forms import Enquiryform
 def wellsaidview(request):
     user_said = Wellsaid.objects.all()
     return render(request, 'srjdjango/wellsaid.html', { 'user_said': user_said })
+class Landview(TemplateView):
+    template_name = 'srjdjango/land.html'
 
 class Homeview(TemplateView):
     template_name = 'srjdjango/home.html'
