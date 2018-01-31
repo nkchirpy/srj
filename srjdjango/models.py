@@ -9,6 +9,9 @@ class Wellsaid(models.Model):
     fetch_image = models.FileField(upload_to='documents/')
     description = models.CharField(max_length=500, blank=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Enquirymodel(models.Model):
 

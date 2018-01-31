@@ -16,6 +16,6 @@ class Enquiryform(forms.ModelForm):
 
             'contact_number':forms.TextInput(attrs={'class':'form-control is-valid oval_border','type':'None','id':'form-contact'}),
 
-            'comments':forms.Textarea(attrs={'class':'form-control is-valid oval_border1','id':'form-comments',}),
+            'comments':forms.Textarea(attrs={'class':'form-control is-valid oval_border','id':'form-comments',}),
 
         }

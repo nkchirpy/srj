@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(-90deg, #030303,#696969);
+}
+
 #scrolling {
   margin-top: 2.5rem;
 }
@@ -137,8 +141,13 @@
 }
 
 .black_font {
-  color: black;
+  color: white;
 }
 
 
 /* Enquiry page */
+
+
+.font-color {
+  color: white;
+}
