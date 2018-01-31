@@ -7,9 +7,9 @@
     <section id="contact_form">
 
         <div class="container">
-            <div class="jumbotron contact_jumbotron animated bounceInUp" style="margin-top: 7rem; background: #4B0082;">
+            <div class="jumbotron contact_jumbotron animated bounceInUp" style="margin-top: 7rem; background: linear-gradient(-90deg, #241663,#0d2a67, #27014f,#083889,#02002f)">
 
-                <h2 class="contact-text font-color">Enquiry Form</h2>
+                <h2 class="contact-text" style="color:#EEC900">Enquiry Form</h2>
                     <form method="POST" id="contact-form" class="font-color">
                       {% csrf_token %}
                       {{ form.as_p }}
