@@ -2,6 +2,7 @@
 <!--{% load staticfiles %}-->
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="/home/workdesk2/srj/static/srjdjango/css/gold.css">
   <!-- <link rel="stylesheet" href="/static/srjdjango/css/weather.css"> -->
@@ -59,6 +60,15 @@
     from {background-position: 0px 0px, 0px 0px, 0px 0px;}
     to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
+
+@media only screen and (max-width:425px){
+  .card{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+}
   </style>
 
 </head>
@@ -115,7 +125,7 @@
 
   <div class="container" style="margin-top:10%">
     <div class="row">
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 ">
         <div class="card">
           <div class="card-header">Test Name</div>
           <div class="card-body">
