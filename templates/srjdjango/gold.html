@@ -1,12 +1,13 @@
 <html>
+{% load staticfiles %}
+
 <head>
-  {% load staticfiles %}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static 'srjdjango/css/weather.css' %}">
+  <link rel="stylesheet" href="/home/workdesk2/srj/static/srjdjango/css/gold.css">
+  <!-- <link rel="stylesheet" href="/static/srjdjango/css/weather.css"> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
+  <!--<link rel="stylesheet" href="{% static 'srjdjango/css/weather.css' %}">-->
 
   <!-- below api for nav and footer  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -27,6 +28,7 @@
 .card-footer{
     background: linear-gradient(-90deg, #f86b24bf, #f8d86d)
 }
+
 .card:hover{
    box-shadow: 0px 0px 150px #FF82AB;
     z-index: 1;
@@ -40,12 +42,29 @@
     transform: scale(1.0);
     cursor: pointer
 }
+.snow{
+   background-image:
+           url(https://image.ibb.co/k0aqx6/snow.png),
+           url(https://image.ibb.co/eCahc6/snow1.png),
+           url(https://image.ibb.co/bOboH6/snow2.png);
+   width: 100%;
+   height:100%;
+   position: absoulute;
+   top: 0;
+   left: 0;
+   z-index:1;
+   animation: snow 20s linear infinite;
+}
+@keyframes snow {
+    from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
   </style>
 
 </head>
 
-<body class="weather snow" style="background-color:#d5d4ce;overflow-y:scroll">
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: linear-gradient(-90deg, #4876FF, #FF3E96);">
+<body class="snow" style="background-color:#000000;overflow-y:scroll">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
     <a class="navbar-brand" href="{% url 'home' %}">SRJ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,13 +85,11 @@
             <a class="dropdown-item" href="{% url 'hoj' %}">History of jewel</a>
             <a class="dropdown-item" href="{% url 'uoj' %}">Use of jewel</a>
             <a class="dropdown-item" href="{% url 'hog' %}">History of gold</a>
-            <a class="dropdown-item" href="{% url 'hos' %}">History of silver</a>
-            <a class="dropdown-item" href="{% url 'hon' %}">History of Navaratna</a>
           </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Verticals
+              Products
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
@@ -96,6 +113,126 @@
 
 
 
+  <div class="container" style="margin-top:10%">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">Test Name</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:10%">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">Test Name</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:10%">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">Test Name</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header">ES Design</div>
+          <div class="card-body">
+            <img src="http://www.joyalukkas.com/CMS/uploads/ItemImage/APRB30_main.jpg" class="img-fluid" />
+          </div>
+          <div class="card-footer">Product Info</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container" style="margin-top:10%">
     <div class="row">
       <div class="col-lg-3 col-md-3">
@@ -189,12 +326,12 @@
         <div class="col-md-2">
           <ul class="list-unstyled">
             <li class="appdash">Address</li>
-            <li class="appdash">Telugu Street,</li>
-            <li class="appdash">Coimbatore</li>
-            <li class="appdash">India</li>
-            <li class="appdash">+91-9535014213</li>
+            <li class="appdash">150 of street</li>
+            <li class="appdash">State Name</li>
+            <li class="appdash">Country name</li>
+            <li class="appdash">123456789</li>
             <li class="appdash"><a href="www.s-r-j.com">www.s-r-j.com</a></li>
-            <li class="appdash">sriraghavendrajewellers1948@gmail.com</li>
+
           </ul>
         </div>
 
