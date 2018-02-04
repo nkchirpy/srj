@@ -2,9 +2,7 @@ body {
   background: linear-gradient(90deg, #0b0000,#130002,#1c0100,#66060b,#9c0c0f);
 }
 
-#scrolling {
-  margin-top: 2.5rem;
-}
+
 
 .carousel-caption {
 	color: #F5F5F5;

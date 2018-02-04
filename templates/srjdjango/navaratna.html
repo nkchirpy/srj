@@ -75,7 +75,8 @@
 
 <body class="snow" style="background-color:#000000;overflow-y:scroll">
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
-    <a class="navbar-brand" href="{% url 'home' %}">SRJ</a>
+    <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="animated flip"> </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -125,7 +126,7 @@
 
 
 
-   <div class="container" style="margin-top:5%">
+   <div class="container" style="margin-top:8%">
     <div class="row">
       <div class="col-lg-3 col-md-3">
         <div class="card">
@@ -411,7 +412,7 @@
         <div class="col-md-3">
           <p class="appdash">We are glad to have you here. </p>
           <p class="appdash"><span class="fa fa-heart-o" aria-hidden="true"></span>Customer Delight is the Real Success.<span class="fa fa-heart-o" aria-hidden="true"></span></p>
-          <img src="" alt="footer-logo" class="img-fluid os-animation" data-os-animation="flip" data-os-animation-delay="0s" style="text-align:left">
+          <img src="{% static 'images/srj_footer.png' %}" alt="footer-logo" class="img-fluid" data-os-animation="flip" data-os-animation-delay="0s" style="text-align:left">
         </div>
 
         <div class="col-md-2">
