@@ -151,3 +151,8 @@ body {
 .font-color {
   color: white;
 }
+
+
+.borderless td, .borderless th {
+    border: none;
+}
