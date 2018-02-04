@@ -25,12 +25,27 @@
             text-align: center;
             padding: 35px;
         }
-        @media only screen and (max-width:425px){
+        @media only screen and (width:425px){
             .center-div{
-                left: 50px;
+                left: 75px;
             }
             body{
                 background: #E73C7E !important;
+            }
+        }
+        @media only screen and (max-width:375px){
+            .center-div{
+                left: 88px;
+                width: 50%;
+                height: 34%;
+            }
+            body{
+                background: #E73C7E !important;
+            }
+        }
+        @media only screen and (width:320px){
+            .center-div{
+                height: 28%;
             }
         }
         #rotation {
@@ -98,18 +113,17 @@
             top: 0;
             right: 0;
             bottom: 0;
-            left: 90%;
             width: 180px;
             height: 180px;
             border-radius: 3px;
             text-align: center;
             padding: 35px;
+            left: 77%;
         }
         .right{
             position: absolute;
             margin: auto;
             top: 0;
-            right:90%;
             bottom: 0;
             left: 0;
             width: 180px;
