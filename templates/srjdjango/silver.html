@@ -3,11 +3,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'images/fav.ico' %}">
+    <title>Silver</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="/home/workdesk2/srj/static/srjdjango/css/gold.css">
   <!-- <link rel="stylesheet" href="/static/srjdjango/css/weather.css"> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
   <!--<link rel="stylesheet" href="{% static 'srjdjango/css/weather.css' %}">-->
 
   <!-- below api for nav and footer  -->
@@ -73,7 +75,7 @@
 
 </head>
 
-<body class="snow" style="background-color:#000000;overflow-y:scroll">
+<body class="snow" style="background-color:#000000;overflow-y:scroll; font-family: 'Yantramanav', sans-serif;">
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
     <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="animated flip"> </a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +83,7 @@
       </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="{% url 'home' %}">Home</span></a>
         </li>
         <li class="nav-item">
