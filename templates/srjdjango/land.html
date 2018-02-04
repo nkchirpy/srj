@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SRJ</title>
@@ -18,9 +19,8 @@
             right: 0;
             bottom: 0;
             left: 0;
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
+            width: 275px;
+            height: 275px;
             border-radius: 3px;
             text-align: center;
             padding: 35px;
@@ -203,7 +203,7 @@
 <body>
     <!-- <div class="container"> -->
         <div class="left  animated flip">Left</div>
-        <div class="center-div" id="rotation">Logo</div>
+        <img class="center-div" id="rotation" src="{% static 'images/land.png' %}" alt="">
         <div class="right  animated flip"></div>
     <!-- </div> -->
 </body>
