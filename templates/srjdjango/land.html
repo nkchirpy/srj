@@ -3,16 +3,13 @@
 <head>
   {% load staticfiles %}
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SRJ</title>
-    <link rel="icon" href="{% static 'images/fav.ico' %}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .center-div {
@@ -230,16 +227,51 @@
   animation-timing-function: ease-in;
   }
   }
+  /** Tex part Start*/
+  .title{
+    text-align: center;
+    position: relative;
+    height: 0px;
+    top: 100px;
+    font-size: 40px;
+  }
+  .tag{
+    height: 0;
+    position: relative;
+    top: 80%;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  /** Text part End*/
     </style>
 </head>
 
-<body style="font-family: 'Yantramanav', sans-serif;">
+<body>
     <!-- <div class="container"> -->
+        <!-- title begin-->
+        <p class="title">Welcome to <span style="color: #e9ff00;
+            font-size: 45px;
+            font-weight: 600;">S</span>ri  <span style="    color:  #e9ff00;
+            font-size: 45px;
+            font-weight: 600;">R</span>aghav <span style="color:  #e9ff00;
+            font-size: 45px;
+            font-weight: 600;">J</span>ewellers</p>
+
+        <!-- title end-->
         <img src="{% static 'images/left.png' %}" class="left  animated flip"/>
         <a href="{% url 'home' %}"><img class="center-div" id="rotation" src="{% static 'images/land.png' %}" alt=""></a>
-
         <img src="{% static 'images/right.png' %}" class="right  animated flip"/>
+        
+        <!-- footer begin-->
+        <p class="tag"> Customer Delight is the Real Success </p>
+        <p class="tag" style="top: 85%;
+        left: 13%;"> <a href="/home" style="    color: #fff;
+        text-decoration: none;">Continue...</a></p>
+        <!-- footer end -->
     <!-- </div> -->
 </body>
 
 </html>
+
