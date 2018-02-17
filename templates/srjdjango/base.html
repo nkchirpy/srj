@@ -33,7 +33,7 @@ font-size: 22px;
 </style>
 
 <body style="font-family: 'Yantramanav', sans-serif;">
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
     <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="animated flip"> </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,27 +42,27 @@ font-size: 22px;
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Home</span></a>
+          <a class="nav-link" style="color:black;" href="{% url 'home' %}"><b>Home</b></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+          <a class="nav-link" style="color:black;" href="{% url 'about_us' %}"><b>About Us</b></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          History
-        </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+              <b>History</b>
+            </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="{% url 'hoj' %}">History of jewel</a>
             <a class="dropdown-item" href="{% url 'uoj' %}">Use of jewel</a>
             <a class="dropdown-item" href="{% url 'hog' %}">History of gold</a>
             <a class="dropdown-item" href="{% url 'hos' %}">History of silver</a>
-            <a class="dropdown-item" href="{% url 'hon' %}">History of navaratna</a>
+            <a class="dropdown-item" href="{% url 'hon' %}">History of Navaratna</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Verticals
-        </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+              <b>Verticals</b>
+            </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
             <a class="dropdown-item" href="{% url 'silver' %}">Silver</a>
@@ -70,13 +70,13 @@ font-size: 22px;
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'jewelcare' %}">Jewel Care</a>
+          <a class="nav-link" style="color:black;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'enquiry' %}">Enquiry</a>
+          <a class="nav-link" style="color:black;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'wellsaid' %}">Well Said</a>
+          <a class="nav-link" style="color:black;" href="{% url 'wellsaid' %}"><b>Well Said</b></a>
         </li>
 
       </ul>
