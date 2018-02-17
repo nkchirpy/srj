@@ -8,7 +8,7 @@
   <link rel="icon" href="{% static 'images/fav.ico' %}">
   <title>{% block title %} {% endblock %}</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  <link href="{% static 'font/monofont.ttf' %}">
+  <link href="{% static 'font/monofont.ttf' %}" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="{% static 'srjdjango/css/animate.min.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +16,17 @@
   <link rel="stylesheet" href="{% static 'srjdjango/css/homepage_style.css' %}">
 </head>
 <style media="screen">
+@font-face {
+font-family: 'MTCORSVA';
+src: url('{% static 'font//MTCORSVA.eot' %}');
+src: local('MTCORSVA'), url('{% static 'font/MTCORSVA.woff' %}') format('woff'), url('{% static 'font/MTCORSVA.ttf' %}') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_6771">Text with this font applied</p> */
+.fontsforweb_fontid_6771 {
+font-family: 'MTCORSVA' !important;
+}
+
+
   body {
   }
 </style>
