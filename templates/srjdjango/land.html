@@ -66,9 +66,9 @@
                 height: 28%;
             }
         } */
-        #rotation {
+        /* #rotation {
             -webkit-animation: rotation 5s infinite linear;
-        }
+        } */
 
         @-webkit-keyframes rotation {
             from {
@@ -243,7 +243,16 @@
     font-size: 20px;
     font-style: italic;
   }
-
+  @font-face {
+  font-family: 'MTCORSVA';
+  src: url('{% static 'font//MTCORSVA.eot' %}');
+  src: local('MTCORSVA'), url('{% static 'font/MTCORSVA.woff' %}') format('woff'), url('{% static 'font/MTCORSVA.ttf' %}') format('truetype');
+  }
+  /* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_6771">Text with this font applied</p> */
+  .fontsforweb_fontid_6771 {
+  font-family: 'MTCORSVA' !important;
+  font-size: 30px;
+  }
   /** Text part End*/
     </style>
 </head>
@@ -251,27 +260,25 @@
 <body>
     <!-- <div class="container"> -->
         <!-- title begin-->
-        <p class="title">Welcome to <span style="color: #e9ff00;
+        <b><p class="title fontsforweb_fontid_6771" style=" color:  #231f20;">Welcome to <span style="color: #f8e07b;
             font-size: 45px;
-            font-weight: 600;">S</span>ri  <span style="    color:  #e9ff00;
+            font-weight: 600;">S</span><span style=" color:  #231f20;">ri</span>  <span style="    color:  #f8e07b;
             font-size: 45px;
-            font-weight: 600;">R</span>aghav <span style="color:  #e9ff00;
+            font-weight: 600;">R</span><span style=" color:  #231f20;">aghav</span> <span style="color:  #f8e07b;
             font-size: 45px;
-            font-weight: 600;">J</span>ewellers</p>
+            font-weight: 600;">J</span><span style=" color:  #231f20;">ewellers</span></p></b>
 
         <!-- title end-->
-        <img src="{% static 'images/left.png' %}" class="left  animated flip"/>
+        <img src="{% static 'images/right.png' %}" class="left  animated flip"/>
         <a href="{% url 'home' %}"><img class="center-div" id="rotation" src="{% static 'images/land.png' %}" alt=""></a>
         <img src="{% static 'images/right.png' %}" class="right  animated flip"/>
-        
+
         <!-- footer begin-->
-        <p class="tag"> Customer Delight is the Real Success </p>
+        <p class="tag fontsforweb_fontid_6771" style=" color:  #231f20;"> " Customer Delight is the Real Success " </p>
         <p class="tag" style="top: 85%;
-        left: 13%;"> <a href="/home" style="    color: #fff;
-        text-decoration: none;">Continue...</a></p>
+        left: 13%;">
         <!-- footer end -->
     <!-- </div> -->
 </body>
 
 </html>
-
