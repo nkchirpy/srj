@@ -9,6 +9,11 @@ body {
 	transform: translateY(-50%);
 }
 
+#menu > li:last-child
+{
+    float:right;
+}
+
 /* Footer style */
 
 #footer-main {

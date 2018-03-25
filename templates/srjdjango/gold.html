@@ -87,21 +87,22 @@
 </head>
 
 <body class="snow fontsforweb_fontid_6771" style="background-color:#000000;overflow-y:scroll;">
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background: linear-gradient(-90deg, #00FFFF, #FF3E96);">
     <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="animated flip"> </a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav menu">
         <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="{% url 'home' %}"><b>Home</b></span></a>
+          <a class="nav-link" style="color:#ecb939;" href="{% url 'home' %}"><b>Home</b></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="{% url 'about_us' %}"><b>About Us</b></a>
+          <a class="nav-link" style="color:#ecb939;" href="{% url 'about_us' %}"><b>About Us</b></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ecb939;">
               <b>History</b>
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -113,26 +114,40 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ecb939;">
               <b>Verticals</b>
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
-            <a class="dropdown-item" href="{% url 'silver' %}">Silver</a>
+
+
             <a class="dropdown-item" href="{% url 'navaratna' %}">Navarathna (GEMS)</a>
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; padding-left:1.5rem;">Silver<a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinks">
+                  <a class="dropdown-item" tabindex="-1" href="{% url 'gold' %}">Gift</a>
+                  <a class="dropdown-item" tabindex="-1" href="{% url 'gold' %}">Traditional</a>
+              </div>
           </div>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
+          <a class="nav-link" style="color:#ecb939;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
+          <a class="nav-link" style="color:#ecb939;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:black;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
+          <a class="nav-link" style="color:#ecb939;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
         </li>
 
       </ul>
+
+        <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/SriRaghavJewellers/" title="Follow Us On Facebook"><i class="fa fa-facebook-square" style="font-size:2rem;" ></i></a></li>
+          </ul>
+
+
     </div>
   </nav>
 
