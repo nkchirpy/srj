@@ -19,7 +19,7 @@ class Enquirymodel(models.Model):
     email_address = models.EmailField(max_length=200)
     contact_number = models.CharField(max_length=20015)
     comments = models.CharField(max_length=1000)
-
+    browse = models.FileField(upload_to='enquiry/')
 
     def __str__(self):
         return self.name

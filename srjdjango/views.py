@@ -35,8 +35,11 @@ class Historyofnavaratnaview(TemplateView):
 class Goldview(TemplateView):
     template_name = 'srjdjango/gold.html'
 
-class Silverview(TemplateView):
-    template_name = 'srjdjango/silver.html'
+class Giftview(TemplateView):
+    template_name = 'srjdjango/gift.html'
+
+class Tradview(TemplateView):
+    template_name = 'srjdjango/trad.html'
 
 class Navaratnaview(TemplateView):
     template_name = 'srjdjango/navaratna.html'

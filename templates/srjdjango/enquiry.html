@@ -13,6 +13,7 @@
                     <form method="POST" id="contact-form" class="font-color">
                       {% csrf_token %}
                       {{ form.as_p }}
+                     
                       <input type="Submit" value="Submit" class="btn btn-primary" id="sub_button">
                    </form>
             </div>

@@ -39,13 +39,13 @@ font-size: 22px;
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav menu">
         <li class="nav-item">
-          <a class="nav-link" style="color:#ecb939;" href="{% url 'home' %}"><b>Home</b></span></a>
+          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'home' %}"><b>Home</b></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:#ecb939;" href="{% url 'about_us' %}"><b>About Us</b></a>
+          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'about_us' %}"><b>About Us</b></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ecb939;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#dfdfe6;">
               <b>History</b>
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -57,7 +57,7 @@ font-size: 22px;
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#ecb939;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#dfdfe6;">
               <b>Verticals</b>
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -67,28 +67,28 @@ font-size: 22px;
             <a class="dropdown-item" href="{% url 'navaratna' %}">Navarathna (GEMS)</a>
             <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; padding-left:1.5rem;">Silver<a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinks">
-                  <a class="dropdown-item" tabindex="-1" href="{% url 'gold' %}">Gift</a>
-                  <a class="dropdown-item" tabindex="-1" href="{% url 'gold' %}">Traditional</a>
+                  <a class="dropdown-item" tabindex="-1" href="{% url 'gift' %}">Gift</a>
+                  <a class="dropdown-item" tabindex="-1" href="{% url 'trad' %}">Traditional</a>
               </div>
           </div>
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:#ecb939;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
+          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:#ecb939;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
+          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color:#ecb939;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
+          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
         </li>
 
       </ul>
 
         <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="#" title="Follow Us On Facebook"><i class="fa fa-facebook-square" style="font-size:2rem;" ></i></a></li>
-          </ul>
+            <li><a href="https://www.facebook.com/SriRaghavJewellers/"><img src="{% static 'images/fb.png' %}" style="height: 38px;"/></a></li>
+            <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 38px; padding-left: 2px"></li>
+        </ul>
 
 
     </div>
@@ -179,18 +179,18 @@ font-size: 22px;
   <footer id="footer-main">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <p class="appdash">We are glad to have you here. </p>
-          <p class="appdash"><span class="fa fa-heart-o" aria-hidden="true"></span>Customer Delight is the Real Success.<span class="fa fa-heart-o" aria-hidden="true"></span></p>
-          <img src="{% static 'images/srj_footer.png' %}" alt="footer-logo" class="img-fluid" data-os-animation="flip" data-os-animation-delay="0s" style="text-align:left">
+        <div class="col-md-2">
+          <img src="{% static 'images/srj_footer.png' %}" alt="footer-logo" class="img-fluid" data-os-animation="flip" data-os-animation-delay="0s" style="text-align:center">
+          <p class="appdash" style="padding-top: 5px; font-size: 12px"><b><center>Customer Delight is the Real Success.</center></b></p>
+          
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-3">
           <ul class="list-unstyled">
-            <li class="appdash">Address</li>
-            <li class="appdash">Telugu Street,</li>
+            <li class="appdash">Contact</li>
+            <li class="appdash"> Sri Raghav jewellers,</li>
             <li class="appdash">Coimbatore</li>
-            <li class="appdash">India</li>
+            <li class="appdash">Bangalore</li>
             <li class="appdash">+91-9535014213</li>
             <li class="appdash"><a href="www.s-r-j.com">www.s-r-j.com</a></li>
             <li class="appdash">sriraghavendrajewellers1948@gmail.com</li>
@@ -212,7 +212,8 @@ font-size: 22px;
                 <div class="col-md-2">
                   <ul class="list-unstyled">
                     <li class="appdash"><a href="{% url 'gold' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Gold">&nbsp;Gold</a></li>
-                    <li class="appdash"><a href="{% url 'silver' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Silver">&nbsp;Silver</a></li>
+                    <li class="appdash"><a href="{% url 'gift' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Gift">&nbsp;Gift</a></li>
+                    <li class="appdash"><a href="{% url 'trad' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Traditional">&nbsp;Traditional</a></li>
                     <li class="appdash"><a href="{% url 'navaratna' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Navaratna">&nbsp;Navaratna</a></li>
                     <li class="appdash"><a href="{% url 'enquiry' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Enquiry">&nbsp;Enquiry</a></li>
 
@@ -222,13 +223,13 @@ font-size: 22px;
 
         <div class="col-md-3 socialmedia">
           <ul class="list-unstyled">
-            <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Facebook"></i></a>
+            <a href="https://www.facebook.com/SriRaghavJewellers/"><i id="social-fb" class="fa fa-facebook-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Facebook"></i></a>
 
-            <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Twitter"></i></a>
+            <!-- <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Twitter"></i></a>
 
             <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Google plus"></i></a>
 
-            <a href="https://plus.google.com/"><i id="social-li" class="fa fa-linkedin-square fa-3x social" data-toggle="tooltip" data-placement="left" title="linkedin"></i></a>
+            <a href="https://plus.google.com/"><i id="social-li" class="fa fa-linkedin-square fa-3x social" data-toggle="tooltip" data-placement="left" title="linkedin"></i></a> -->
           </ul>
           <p> &copy; copyright 2018</p>
           <p>coded by <a href="https://www.linkedin.com/in/nandakrishnan-selvaraj-261a2277/">chirpy</p>
