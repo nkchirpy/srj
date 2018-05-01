@@ -157,3 +157,7 @@ body {
 .borderless td, .borderless th {
     border: none;
 }
+
+.nav-item:hover{
+  border-bottom: 3px solid #e3af47;
+}
