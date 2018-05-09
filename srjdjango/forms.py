@@ -8,7 +8,7 @@ class Enquiryform(forms.ModelForm):
 
     class Meta:
         model = Enquirymodel
-        fields = ['name','email_address','contact_number','comments']
+        fields = ['name','email_address','contact_number','browse','comments']
         widgets = {
             'name':forms.TextInput(attrs={'class':'form-control is-valid oval_border','placeholder':'Enter your name','id':'form-name','name':'person_name'}),
 
@@ -16,7 +16,7 @@ class Enquiryform(forms.ModelForm):
 
             'contact_number':forms.TextInput(attrs={'class':'form-control is-valid oval_border','type':'None','id':'form-contact'}),
             'comments':forms.Textarea(attrs={'class':'form-control is-valid oval_border custom-file-control','id':'form-comments',}),
-            # 'browse':forms.TextInput(),
+            
         }
 
         
