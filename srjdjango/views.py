@@ -47,6 +47,8 @@ class Navaratnaview(TemplateView):
 class Jewelcareview(TemplateView):
     template_name = 'srjdjango/jewelcare.html'
 
+
+
 # class Enquiryview(TemplateView):
 #     template_name = 'srjdjango/enquiry.html'
 
@@ -59,3 +61,6 @@ class Enquiryview(CreateView):
 
 class Contactview(TemplateView):
     template_name = 'srjdjango/contactus.html'
+
+class Newsview(TemplateView):
+    template_name = 'srjdjango/news.html'

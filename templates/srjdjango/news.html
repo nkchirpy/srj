@@ -1,0 +1,21 @@
+{% extends "srjdjango/base.html" %}
+{% load staticfiles %}
+{% block title %}News{% endblock %}
+
+{% block body_block %}
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        
+                <!-- <img class="d-block w-100" src="{% static 'img/rdesign.jpg' %}" alt="First slide"> -->
+                <div class='jumbotron' style="background-color: rgba(0,0,0,0.5) !important; margin-bottom: -0.1rem;">
+                        <div class="carousel-inner">
+                                <div class="carousel-item active" style="margin-left: 7rem; padding-right: 14rem;margin-top: 7rem; ">
+                                    <img src="{% static 'images/news.jpeg' %}" alt="news" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+      </div> 
+    
+
+{% endblock %}

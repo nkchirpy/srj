@@ -137,6 +137,9 @@
           <li class="nav-item">
             <a class="nav-link" style="color:#dfdfe6;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color:#dfdfe6;" href="{% url 'news' %}"><b>News</b></a>
+            </li>
   
         </ul>
   
@@ -236,11 +239,20 @@
 
   <div class="container" style="margin-top:5%">
     <div class="row">
-    <div class="col-lg-3 col-md-3">
+    <!-- <div class="col-lg-3 col-md-3">
       <div class="card">
           <div class="card-header"></div>
           <div class="card-body">
             <img src="{% static 'images/gems/25.png' %}" class="img-fluid" />
+          </div>
+          <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
+      </div>
+    </div> -->
+    <div class="col-lg-3 col-md-3">
+        <div class="card">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <img src="{% static 'images/gems/22.png' %}" class="img-fluid" />
           </div>
           <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
         </div>
@@ -295,7 +307,7 @@
           <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3">
+      <!-- <div class="col-lg-3 col-md-3">
         <div class="card">
           <div class="card-header"></div>
           <div class="card-body">
@@ -303,7 +315,18 @@
           </div>
           <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
         </div>
-      </div>
+      </div> -->
+      <div class="col-lg-3 col-md-3">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="{% static 'images/gems/21.png' %}" class="img-fluid" />
+            </div>
+            <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
+          </div>
+        </div>
+  
+        
       <div class="col-lg-3 col-md-3">
         <div class="card">
           <div class="card-header"></div>
@@ -316,7 +339,7 @@
     </div>
   </div>
 
-  <div class="container" style="margin-top:5%">
+  <div class="container" style="margin-top:5%;margin-bottom:2rem;">
     <div class="row">
       <div class="col-lg-3 col-md-3">
         <div class="card">
@@ -357,39 +380,7 @@
     </div>
   </div>
 
-  <div class="container" style="margin-top:5%; margin-bottom:2rem;">
-    <div class="row">
-      <div class="col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-header"></div>
-          <div class="card-body">
-            <img src="{% static 'images/gems/21.png' %}" class="img-fluid" />
-          </div>
-          <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-3">
-        <div class="card">
-          <div class="card-header"></div>
-          <div class="card-body">
-            <img src="{% static 'images/gems/22.png' %}" class="img-fluid" />
-          </div>
-          <div class="card-footer"><center><img src="{% static 'images/srj.png' %}" alt="logo"></center></div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-3" style="margin-bottom: 2rem;">
-        
-      </div>
-
-
-      <div class="col-lg-3 col-md-3">
-        
-      </div>
-    </div>
-  </div>
-
+  
     
 
 
@@ -401,51 +392,64 @@
             <p class="appdash" style="padding-top: 5px; font-size: 12px"><b><center>Customer Delight is the Real Success.</center></b></p>
             
           </div>
-  
-          <div class="col-md-3">
+    
+          <div class="col-md-2">
             <ul class="list-unstyled">
               <li class="appdash">Contact</li>
               <li class="appdash"> Sri Raghav jewellers,</li>
-            <li class="appdash">Coimbatore</li>
-            <li class="appdash">Bangalore</li>
+              <li class="appdash">Coimbatore</li>
+              <li class="appdash">Bangalore</li>
               <li class="appdash">+91-9535014213</li>
               <li class="appdash"><a href="www.s-r-j.com">www.s-r-j.com</a></li>
               <li class="appdash">sriraghavendrajewellers1948@gmail.com</li>
-  
+    
             </ul>
           </div>
-  
-  
+    
+    
                   <div class="col-md-2">
                     <ul class="list-unstyled">
                       <li class="appdash"><a href="{% url 'home' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Home">&nbsp;Home</a></li>
                       <li class="appdash"><a href="{% url 'about_us' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="About us">&nbsp;About us</a></li>
-                      <li class="appdash"><a href="{% url 'hoj' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="History of gold">&nbsp;History of gold</a></li>
+                     
                       <li class="appdash"><a href="{% url 'jewelcare' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Jewel care">&nbsp;Jewel care</a></li>
-                      <li class="appdash"><a href="{% url 'wellsaid' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Well said">&nbsp;Well said</a></li>
+                      <li class="appdash"><a href="{% url 'wellsaid' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Feedback">&nbsp;Feedback</a></li>
+                      <li class="appdash"><a href="{% url 'enquiry' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Enquiry">&nbsp;Enquiry</a></li>
+                      <li class="appdash"><a href="{% url 'news' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="News">&nbsp;News</a></li>
                     </ul>
                   </div>
-  
+    
                   <div class="col-md-2">
                     <ul class="list-unstyled">
                       <li class="appdash"><a href="{% url 'gold' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Gold">&nbsp;Gold</a></li>
                       <li class="appdash"><a href="{% url 'gift' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Gift">&nbsp;Gift</a></li>
                       <li class="appdash"><a href="{% url 'trad' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Traditional">&nbsp;Traditional</a></li>
                       <li class="appdash"><a href="{% url 'navaratna' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Navaratna">&nbsp;Navaratna</a></li>
-                      <li class="appdash"><a href="{% url 'enquiry' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Enquiry">&nbsp;Enquiry</a></li>
-  
+                      
+    
                     </ul>
                   </div>
-  
-  
-          <div class="col-md-3 socialmedia">
+    
+                  <div class="col-md-2">
+                    <ul class="list-unstyled">
+                      <li class="appdash"><a href="{% url 'hoj' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="History of jewel">&nbsp;History of jewel</a></li>
+                      <li class="appdash"><a href="{% url 'uoj' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Use of jewel">&nbsp;Use of jewel</a></li>
+                      <li class="appdash"><a href="{% url 'hog' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="History of gold">&nbsp;History of gold</a></li>
+                      <li class="appdash"><a href="{% url 'hos' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="History of silver">&nbsp;History of silver</a></li>
+                      <li class="appdash"><a href="{% url 'hon' %}" class="font-link" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="History of navaratna">&nbsp;History of navaratna</a></li>
+                    </ul>
+                  </div>
+    
+    
+          <div class="col-md-2 socialmedia">
             <ul class="list-unstyled">
               <a href="https://www.facebook.com/SriRaghavJewellers/"><i id="social-fb" class="fa fa-facebook-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Facebook"></i></a>
-  
+              <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 45px; padding-bottom: 10px"></li>
+    
               <!-- <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Twitter"></i></a>
-  
+    
               <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Google plus"></i></a>
-  
+    
               <a href="https://plus.google.com/"><i id="social-li" class="fa fa-linkedin-square fa-3x social" data-toggle="tooltip" data-placement="left" title="linkedin"></i></a> -->
             </ul>
             <p> &copy; copyright 2018</p>
@@ -453,7 +457,7 @@
                 </div>
         </div>
     </div>
-  </footer>
+    </footer>
   
 
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
