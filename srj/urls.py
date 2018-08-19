@@ -21,8 +21,8 @@ from srjdjango import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',views.Landview.as_view(),name='land'),
-    url(r'^home$',views.Homeview.as_view(),name='home'),
+    # url(r'^$',views.Landview.as_view(),name='land'),
+    url(r'^$',views.Homeview.as_view(),name='home'),
     url(r'^about_us$',views.Aboutusview.as_view(),name='about_us'),
     url(r'^history_of_jewel$',views.Historyofjewelview.as_view(),name='hoj'),
     url(r'^use_of_jewel$',views.Useofjewelview.as_view(),name='uoj'),
