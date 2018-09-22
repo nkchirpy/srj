@@ -1,6 +1,19 @@
 body {
 
-  background: linear-gradient(90deg, #470000,#470000,#1c0100,#66060b,#9c0c0f);
+  background: linear-gradient(90deg, #ffffff	,#b33947,#37177b	,green	,#ffffff	);
+}
+
+.rotation {
+  -webkit-animation: rotation 5s infinite linear;
+} 
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
 }
 .carousel-caption {
 	color: #F5F5F5;

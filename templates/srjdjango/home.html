@@ -27,79 +27,95 @@ src: local('MTCORSVA'), url('{% static 'font/MTCORSVA.woff' %}') format('woff'),
 font-family: 'MTCORSVA' !important;
 font-size: 22px;
 }
+#rotation {
+  -webkit-animation: rotation 5s infinite linear;
+} 
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
 
 </style>
 
 <body class="fontsforweb_fontid_6771">
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background: linear-gradient(-90deg, #00008B, #FF3E96);">
-    <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="animated flip"> </a>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background: linear-gradient(-90deg, #00008B, #FF3E96);font-family:'Work Sans', -apple-system, BlinkMacSystemFont, ">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav menu">
-        <li class="nav-item">
-          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'home' %}"><b>Home</b></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'about_us' %}"><b>About Us</b></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#dfdfe6;">
-              <b>History</b>
-            </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="{% url 'hoj' %}">History of jewel</a>
-            <a class="dropdown-item" href="{% url 'uoj' %}">Use of jewel</a>
-            <a class="dropdown-item" href="{% url 'hog' %}">History of gold</a>
-            <a class="dropdown-item" href="{% url 'hos' %}">History of silver</a>
-            <a class="dropdown-item" href="{% url 'hon' %}">History of Navaratna</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#dfdfe6;">
-              <b>Verticals</b>
-            </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
+        <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);font-family:'Work Sans', -apple-system, BlinkMacSystemFont, "> -->
 
-
-            <a class="dropdown-item" href="{% url 'navaratna' %}">Navarathna (GEMS)</a>
-            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; padding-left:1.5rem;">Silver<a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinks">
-                  <a class="dropdown-item" tabindex="-1" href="{% url 'gift' %}">Gift</a>
-                  <a class="dropdown-item" tabindex="-1" href="{% url 'trad' %}">Traditional</a>
-              </div>
-          </div>
-
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color:#dfdfe6;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" style="color:#dfdfe6;" href="{% url 'news' %}"><b>News</b></a>
+      <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" id="rotation"> </a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav menu">
+            <li class="nav-item">
+                <h2 class="nav-link" style="color:#F0F8FF;"><b><span style="color:#ffffff">Sri</span> <span style="color:#ffffff">Raghav</span> <span style="color:#ffffff">Jewellers</span></b></h2>
+              </li>
+        </ul>
+        <ul class="navbar-nav menu ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="color:#dfdfe6;" href="{% url 'home' %}"><b>Home</b></span></a>
           </li>
-
-      </ul>
-      <ul class="nav navbar-nav ml-auto animated fadeInLeftBig">
-          <li style="color:#F0F8FF;"><h3><b>Sri Raghav Jewellers</b></h3></li>
-        </ul>
-
-        <ul class="nav navbar-nav ml-auto">
-            <li><a href="https://www.facebook.com/SriRaghavJewellers/"><img src="{% static 'images/fb.png' %}" style="height: 38px;"/></a></li>
-            <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 38px; padding-left: 2px"></li>
-        </ul>
-
-
-    </div>
-  </nav>
+          <li class="nav-item">
+            <a class="nav-link" style="color:#dfdfe6;" href="{% url 'about_us' %}"><b>About Us</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#dfdfe6;">
+                <b>History</b>
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'hoj' %}">History of jewel</a>
+              <a class="dropdown-item" href="{% url 'uoj' %}">Use of jewel</a>
+              <a class="dropdown-item" href="{% url 'hog' %}">History of gold</a>
+              <a class="dropdown-item" href="{% url 'hos' %}">History of silver</a>
+              <a class="dropdown-item" href="{% url 'hon' %}">History of Navaratna</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#dfdfe6;">
+                <b>Verticals</b>
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
+  
+  
+              <a class="dropdown-item" href="{% url 'navaratna' %}">Navarathna (GEMS)</a>
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; padding-left:1.5rem;">Silver<a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinks">
+                    <a class="dropdown-item" tabindex="-1" href="{% url 'gift' %}">Gift</a>
+                    <a class="dropdown-item" tabindex="-1" href="{% url 'trad' %}">Traditional</a>
+                </div>
+            </div>
+  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:#dfdfe6;" href="{% url 'jewelcare' %}"><b>Jewel Care</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:#dfdfe6;" href="{% url 'enquiry' %}"><b>Enquiry</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:#dfdfe6;" href="{% url 'wellsaid' %}"><b>Feedback</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color:#dfdfe6;" href="{% url 'news' %}"><b>News</b></a>
+          </li>
+  
+  
+              <li><a href="https://www.facebook.com/SriRaghavJewellers/"><img src="{% static 'images/fb.png' %}" style="height: 38px;"/></a></li>
+              <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 38px; padding-left: 2px"></li>
+          </ul>
+  
+  
+      </div>
+    </nav>
+  
 
 
 
