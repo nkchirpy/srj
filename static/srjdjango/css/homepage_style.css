@@ -1,7 +1,3 @@
-body {
-
-  background: linear-gradient(90deg, #ffffff	,#b33947,#37177b	,#b76e79	,#ffffff	);
-}
 
 .rotation {
   -webkit-animation: rotation 5s infinite linear;
