@@ -151,13 +151,15 @@
 }
 
 .black_font {
-  color: white;
+  color: black;
 }
 
 
 /* Enquiry page */
 
-
+.green_color {
+  color: #009B91;
+}
 .font-color {
   color: white;
 }
