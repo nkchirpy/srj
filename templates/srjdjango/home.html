@@ -47,18 +47,14 @@ font-size: 22px;
 
         <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);font-family:'Work Sans', -apple-system, BlinkMacSystemFont, "> -->
 
-      <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="" style="width: 70%;"> </a>
+      <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="" style="width: 100%;"> </a>
   
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#009B91;">
       <span class="navbar-toggler-icon" ></span>
     </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav menu">
-            <li class="nav-item">
-                <h2 class="nav-link" style="color:#009B91;"><b><span style="color:#009B91">Sri</span> <span style="color:#009B91">Raghav</span> <span style="color:#009B91">Jewellers</span></b></h2>
-              </li>
-        </ul>
-        <ul class="navbar-nav menu ml-auto">
+        
+        <ul class="navbar-nav menu ">
           <li class="nav-item">
             <a class="nav-link" style="color:#009B91;" href="{% url 'home' %}">Home&nbsp;|</span></a>
           </li>
@@ -112,6 +108,11 @@ font-size: 22px;
               <!-- <li><a href="https://www.facebook.com/SriRaghavJewellers/"><img src="{% static 'images/fb.png' %}" style="height: 38px;"/></a></li>
               <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 38px; padding-left: 2px"></li> -->
           </ul>
+          <ul class="navbar-nav menu ml-auto">
+            <li class="nav-item">
+                <h2 class="nav-link" style="color:#009B91;"><b><span style="color:#009B91">Sri</span> <span style="color:#009B91">Raghav</span> <span style="color:#009B91">Jewellers</span></b></h2>
+              </li>
+        </ul>
   
   
       </div>
@@ -120,7 +121,7 @@ font-size: 22px;
 
 
 
-  <section id="scrolling" style="margin-top: 0.5%;">
+  <section id="scrolling" style="margin-top: 0.5%;border:7px solid #009B91;border-radius: 20px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -133,7 +134,7 @@ font-size: 22px;
         <div class="carousel-item active">
           <img class="d-block w-100" src="{% static 'images/slide1.png' %}" alt="Second slide">
           <div class="carousel-caption d-md-block">
-            <div class="container " style="background-color: rgba(0,0,0,0) !important; color:#009B91; margin-left: 650px!important; margin-top: 300px!important; width:50%;">
+            <div class="container " style="background-color: rgba(0,0,0,0) !important; color:white; margin-left: 650px!important; margin-top: 300px!important; width:50%;">
               <h2>"Jewellery has the power to be the one little thing that make you feel unique"</h2>
                 
             </div>
@@ -172,26 +173,26 @@ font-size: 22px;
   <section id="vmq">
     <div class="container">
       <div class="card-group">
-        <div class="card" style="border:1.5px solid #009B91;">
+        <div class="card" style="border:3.5px solid #009B91;border-radius: 25px;">
           <img class="card-img-top animated slideInLeft delay" src="{% static 'images/vision.png' %}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title" style="color:#009B91;"><center><strong>Vision</strong></center></h5>
+            <h5 class="card-title" style="color:white;background-color: #009B91;border:3.5px solid #009B91;border-radius: 25px;"><center><strong>Vision</strong></center></h5>
             <p class="card-text" style="color:black"><center>To continue the heritage of making best quality precious metal jewellery and make a difference in the society in all possible ways.</center></p>
           </div>
         </div>
         &nbsp;
-        <div class="card" style="border:1.5px solid #009B91; ">
+        <div class="card" style="border:3.5px solid #009B91;border-radius: 25px; ">
           <img class="card-img-top animated bounceInUp delay" src="{% static 'images/quality.png' %}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title" style="color:#009B91;"><center><strong>Mission</strong></center></h5>
+            <h5 class="card-title" style="color:white;background-color: #009B91;border:3.5px solid #009B91;border-radius: 25px;"><center><strong>Mission</strong></center></h5>
             <p class="card-text" style="color:black"><center>To express themselves with an array of jewellery made to perfection by experienced craftsmen using superior quality of precious metals.Products for the customer, by customer’s specifications with customer’s requirements.</center></p>
           </div>
         </div>
         &nbsp;
-        <div class="card" style="border:1.5px solid #009B91; ">
+        <div class="card" style="border:3.5px solid #009B91;border-radius: 25px; ">
           <img class="card-img-top animated slideInRight delay" src="{% static 'images/mission.png' %}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title" style="color:#009B91;"><center><strong>Quality</strong></center></h5>
+            <h5 class="card-title" style="color:white;background-color: #009B91;border:3.5px solid #009B91;border-radius: 25px;"><center><strong>Quality</strong></center></h5>
             <p class="card-text" style="color:black;"><center>To provide the quality that ensures customer delight.</center></p>
           </div>
         </div>
