@@ -7,14 +7,14 @@
     <section id="contact_form">
 
         <div class="container ">
-            <div class="jumbotron contact_jumbotron animated bounceInUp" style="margin-top: 7rem; background:none;border:1px solid #009B91;">
-                <cennter><h1 style="color:#009B91">Upload your customized design and get the quote within 24 hours</h1></cennter>
-                <h2 class="contact-text" style="">Enquiry Form</h2>
+            <div class="jumbotron contact_jumbotron animated bounceInUp" style="margin-top: 7rem; background:none;border:3.5px solid #009B91;border-radius: 25px;">
+                <cennter><h1 style="color:#009B91">Upload customized design and get the quote</h1></cennter>
+                <h2 class="contact-text" style="color:white;background-color: #009B91;border:3.5px solid #009B91;border-radius: 25px;"><center>Enquiry Form</center></h2>
                     <form method="POST" id="contact-form" class="">
                       {% csrf_token %}
                       {{ form.as_p }}
                      
-                      <input type="Submit" value="Submit" class="btn " id="sub_button" style="background-color: #009B91">
+                      <input type="Submit" value="Submit" class="btn " id="sub_button" style="background-color: #009B91;color: white">
                    </form>
             </div>
         </div>

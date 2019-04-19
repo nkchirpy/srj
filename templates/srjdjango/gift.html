@@ -99,78 +99,80 @@
 
 </head>
 <body class="snow " style="background-color:#000000;overflow-y:scroll;">
-  <nav class="navbar navbar-expand-sm navbar-dark " style="">
+  <nav class="navbar navbar-expand-sm navbar-dark" style="">
 
-      <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);font-family:'Work Sans', -apple-system, BlinkMacSystemFont, "> -->
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top fontsforweb_fontid_6771" style="background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);font-family:'Work Sans', -apple-system, BlinkMacSystemFont, "> -->
 
-        <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="" style="width: 70%;"> </a>
+  <a class="navbar-brand" href="{% url 'home' %}"> <img src="{% static 'images/srj.png' %}" alt="" class="" style="width: 100%;"> </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#009B91;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav menu">
-              <li class="nav-item">
-                  <h2 class="nav-link" style="color:#009B91;"><b><span style="color:#009B91">Sri</span> <span style="color:#009B91">Raghav</span> <span style="color:#009B91">Jewellers</span></b></h2>
-                </li>
-          </ul>
-          <ul class="navbar-nav menu ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" style="color:#009B91;" href="{% url 'home' %}">Home&nbsp;|</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color:#009B91;" href="{% url 'about_us' %}">About Us&nbsp;|</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#009B91;">
-                  History&nbsp;|
-                </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="{% url 'hoj' %}">History of jewel</a>
-                <a class="dropdown-item" href="{% url 'uoj' %}">Use of jewel</a>
-                <a class="dropdown-item" href="{% url 'hog' %}">History of gold</a>
-                <a class="dropdown-item" href="{% url 'hos' %}">History of silver</a>
-                <a class="dropdown-item" href="{% url 'hon' %}">History of Navaratna</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#009B91;">
-                  Verticals&nbsp;|
-                </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#009B91;">
+  <span class="navbar-toggler-icon" ></span>
+</button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
     
-    
-                <a class="dropdown-item" href="{% url 'navaratna' %}">Navarathna (GEMS)</a>
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; padding-left:1.5rem;">Silver<a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinks">
-                      <a class="dropdown-item" tabindex="-1" href="{% url 'gift' %}">Gift</a>
-                      <a class="dropdown-item" tabindex="-1" href="{% url 'trad' %}">Traditional</a>
-                  </div>
-              </div>
-    
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color:#009B91;" href="{% url 'jewelcare' %}">Jewel Care&nbsp;|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color:#009B91;" href="{% url 'enquiry' %}">Enquiry&nbsp;|</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color:#009B91;" href="{% url 'wellsaid' %}">Feedback</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" style="color:#009B91;" href="{% url 'news' %}">News</a>
-            </li> -->
-    
-            
-                <!-- <li><a href="https://www.facebook.com/SriRaghavJewellers/"><img src="{% static 'images/fb.png' %}" style="height: 38px;"/></a></li>
-                <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 38px; padding-left: 2px"></li> -->
-            </ul>
-    
-    
+    <ul class="navbar-nav menu ">
+      <li class="nav-item">
+        <a class="nav-link" style="color:#009B91;" href="{% url 'home' %}">Home&nbsp;|</span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" style="color:#009B91;" href="{% url 'about_us' %}">About Us&nbsp;|</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#009B91;">
+            History&nbsp;|
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'hoj' %}">History of jewel</a>
+          <a class="dropdown-item" href="{% url 'uoj' %}">Use of jewel</a>
+          <a class="dropdown-item" href="{% url 'hog' %}">History of gold</a>
+          <a class="dropdown-item" href="{% url 'hos' %}">History of silver</a>
+          <a class="dropdown-item" href="{% url 'hon' %}">History of Navaratna</a>
         </div>
-      </nav>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#009B91;">
+            Verticals&nbsp;|
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'gold' %}">Gold</a>
+
+
+          <a class="dropdown-item" href="{% url 'navaratna' %}">Navarathna (GEMS)</a>
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; padding-left:1.5rem;">Silver<a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinks">
+                <a class="dropdown-item" tabindex="-1" href="{% url 'gift' %}">Gift</a>
+                <a class="dropdown-item" tabindex="-1" href="{% url 'trad' %}">Traditional</a>
+            </div>
+        </div>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:#009B91;" href="{% url 'jewelcare' %}">Jewel Care&nbsp;|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:#009B91;" href="{% url 'enquiry' %}">Enquiry&nbsp;|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:#009B91;" href="{% url 'wellsaid' %}">Feedback</a>
+      </li>
+      <!-- <li class="nav-item">
+          <a class="nav-link" style="color:#009B91;" href="{% url 'news' %}">News</a>
+      </li> -->
+
+
+          <!-- <li><a href="https://www.facebook.com/SriRaghavJewellers/"><img src="{% static 'images/fb.png' %}" style="height: 38px;"/></a></li>
+          <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 38px; padding-left: 2px"></li> -->
+      </ul>
+      <ul class="navbar-nav menu ml-auto">
+        <li class="nav-item">
+            <h2 class="nav-link" style="color:#009B91;"><b><span style="color:#009B91">Sri</span> <span style="color:#009B91">Raghav</span> <span style="color:#009B91">Jewellers</span></b></h2>
+          </li>
+    </ul>
+
+
+  </div>
+</nav>
   
   
   <div class="container" style="margin-top:10%">
@@ -565,7 +567,7 @@
           <div class="col-md-2 socialmedia">
             <ul class="list-unstyled">
               <a href="https://www.facebook.com/SriRaghavJewellers/"><i id="social-fb" class="fa fa-facebook-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Facebook"></i></a>
-              <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 45px; padding-bottom: 10px"></li>
+              <li><img src="{% static 'images/whatsapp.png' %}" title="9535014213" style="height: 45px; padding-bottom: 10px"><span>&nbsp; 9535014213</span></li></li>
     
               <!-- <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social" data-toggle="tooltip" data-placement="left" title="Twitter"></i></a>
     
@@ -573,7 +575,7 @@
     
               <a href="https://plus.google.com/"><i id="social-li" class="fa fa-linkedin-square fa-3x social" data-toggle="tooltip" data-placement="left" title="linkedin"></i></a> -->
             </ul>
-            <p> &copy; copyright 2018</p>
+            <p> &copy; copyright 2019</p>
             <p>coded by <a href="https://www.linkedin.com/in/nandakrishnan-selvaraj-261a2277/">chirpy</p>
                 </div>
         </div>
