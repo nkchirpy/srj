@@ -7,7 +7,7 @@
           {% for obj in user_said %}
             <td style="border:none;">
               <div class="card" style="width: 15rem; background:none;border:3.5px solid #009B91;border-radius: 25px;">
-                <img class="img-thumbnail" src="{{ obj.fetch_image.url }}" alt="Card image cap" style="background:none; border:none;">
+                <img class="img-thumbnail" src="{{ obj.fetch_image.url }}" alt="Card image cap" style="background:none; border:none;border-radius: 50%">
                   <div class="card-body">
                     <h3 class="card-title" style="color:#009B91">{{ obj.name }}</h3>
                     <p class="card-text" style="color:black">{{ obj.description }}</p>
