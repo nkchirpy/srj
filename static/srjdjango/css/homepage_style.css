@@ -34,9 +34,19 @@
 	background: #009B91;
 }
 hr.style13 {
-	background-color: #fff;
+	/* background-color: #fff; */
 	border-top: 3px dashed #009B91;
 }
+
+/* hr.type_7 {
+  border:  1 ;
+  border-color: #009B91;
+  height: 55px;
+  
+  background: url("/static/images/srj.png") ;
+  background-repeat: no-repeat;
+  } */
+  
 #footer-main a {
 		font-size: 100%;
 		font-weight: bold;
