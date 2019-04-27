@@ -33,7 +33,10 @@
 	padding: 4rem;
 	background: #009B91;
 }
-
+hr.style13 {
+	background-color: #fff;
+	border-top: 3px dashed #009B91;
+}
 #footer-main a {
 		font-size: 100%;
 		font-weight: bold;
