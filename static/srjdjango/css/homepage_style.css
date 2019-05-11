@@ -38,6 +38,12 @@ hr.style13 {
 	border-top: 3px dashed #009B91;
 }
 
+.hr2 {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #009B91, rgba(0, 0, 0, 0));
+  }
+
 /* hr.type_7 {
   border:  1 ;
   border-color: #009B91;
